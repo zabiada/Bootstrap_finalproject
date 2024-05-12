@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="jquery/3.4.1/jquery.min.js"></script>
+    <script src="libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
+    <style>
+          .navbar1 .navbar-nav  .nav-link:hover{
+          color:  red;
+      }
+      .navbar1 .navbar-nav  .dropdown-item:hover{
+          color:  red;
+      }
+      .navbar1 .navbar-nav #active{
+          color:  red;
+      }
+      .navbar-brand{
+          border: none;
+          border-left: 4px solid black;
+          padding: 3px;
+      }
+      .jumbotron .active{
+          color:  red;
+      }
+    
+     .card img{
+    display: block;
+    width: 100%;
+}
+.card-text{
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 92%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.card-text:hover{
+    opacity: .6;
+
+}
+.container-fluid a.btn{
+  border-radius: 20px;
+  padding: 10px;
+}
+.container-fluid a.btn:hover{
+  background-color: red;
+  color: white;
+}
+.container-fluid #l1{
+  background-color:red;
+  color: white;
+}
+      </style>
+</head>
+<body>
+    <section id="top"   >
+        <div class=" d-flex bg-dark text-light justify-content-between ">
+            <div class="p-2 ml-4">
+                <i class="fa fa-envelope p-1" style="color: red;"></i><a href="contact@example.com" class="text-white">contact@example.com</a>
+                <i class="fa fa-mobile-alt  p-1 ml-5"  style="color: red;"></i><span class="text-white">+1 5589 55488 55</span>
+            </div>
+              <div class="p-2 text-white d-flex">
+             <i class="fab fa-twitter p-2"></i>
+             <i class="fab fa-facebook p-2"></i>
+             <i class="fab fa-instagram p-2"></i>
+             <i class="fab fa-linkedin p-2"></i>
+             </div>
+        </div>
+    </section>
+     <!-- ....Navbar..... -->
+     <section class="navbar1  justify-content-center align-items-center sticky-top ">
+         <nav class="navbar navbar-expand-sm navbar-light shadow-lg bg-light">
+           <!-- <h2> <a href="" class="navbar-brand mr-5">ETERNA</a></h2> -->
+           <a class="navbar-brand ml-5" href="#"> <img src="logo 131.png" style="height: 50px ; width: 100%;"> </a> 
+             <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse " id="navcol">
+             <ul class="navbar-nav align-items-center ml-auto">
+                 <li class="nav-item p-2"><a href="index.html" class="nav-link" id="active">Home</a></li>
+                 <li class="nav-item p-2"><a href="about.html" class="nav-link">About</a></li>
+                 <li class="nav-item p-2"><a href="services.html" class="nav-link">Services</a></li>
+                 <li class="nav-item p-2"><a href="portfolio.html" class="nav-link">Portfilo</a></li>
+                 <li class="nav-item p-2"><a href="team.html" class="nav-link">team</a></li>
+                 <li class="nav-item p-2"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                 <li class="nav-item p-2"><a href="blog.html" class="nav-link">Blog</a></li>
+                 <li class="nav-item p-2 dropdown"><a href="#" class="nav-link dropdown-toggle" id="drop" data-toggle="dropdown">Drop Down</a>
+                 <div class="dropdown-menu">
+                     <a href="" class="dropdown-item">Drop Down 1</a>
+                     <a href="" class="dropdown-item dropdown-toggle " data-toggle="dropdown" id="drop2">Deep Drop Down</a>
+                     <div class="dropdown-menu">
+                         <a href="" class="dropdown-item">Deep Drop Down 1</a>
+                         <a href="" class="dropdown-item">Deep Drop Down 2</a>
+                         <a href="" class="dropdown-item">Deep Drop Down 3</a>
+                         <a href="" class="dropdown-item">Deep Drop Down 4</a>
+                         <a href="" class="dropdown-item">Deep Drop Down 5</a>
+                     </div>
+                     <a href="" class="dropdown-item">Drop Down 2</a>
+                     <a href="" class="dropdown-item">Drop Down 3</a>
+                     <a href="" class="dropdown-item">Drop Down 4</a>
+                 </div>
+                 </li>
+                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+             </ul>
+         </div>
+         </nav>
+     </section>
+      <!-- two part of navbar -->
+      <div class="jumbotron p-4">
+          <span class="ml-5"><a href="index.html" class="active" style="color: red;">Home</a>/</span><span>Portfilo</span>
+          <h2 class="ml-5">Portfilo</h2></div>
+          <div id="accordion">
+            <div class="container-fluid p-0 m-0 text-center">
+                <a href="#colAll" class="btn btn-light m-2 active" id="l1" data-toggle="collapse">All</a><a href="#colA" class="btn btn-light m-2" data-toggle="collapse">App</a><a href="#colC" class="btn btn-light m-2" data-toggle="collapse">Card</a><a href="#colW" class="btn btn-light m-2" data-toggle="collapse">Web</a>
+            </div>
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="collapse show" id="colA" data-parent="#accordion">
+                        <div class="card">
+                            <img src="d01dfa8621f83289155a3be0970fb0cb.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>App 1</h3>
+                            <h5>App</h5>
+                            <div class="icon">
+                                <i class="fa fa-plus mr-3"></i><i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="collapse show" id="colW" data-parent="#accordion">
+        
+                        <div class="card">
+                            <img src="istockphoto-1031354828-612x612.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Web 3</h3>
+                            <h5>Web</h5>
+                            <div class="icon">
+                                <i class="fa fa-plus mr-3"></i><i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="collapse show" id="colA" data-parent="#accordion">
+                        <div class="card">
+                            <img src="home-bg-slideshow1.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>App 2</h3>
+                            <h5>App</h5>
+                            <div class="icon">
+                                <i class="fa fa-plus mr-3"></i><i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="collapse show" id="colC" data-parent="#accordion">
+                        <div class="card">
+                            <img src="home-bg-slideshow2.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Card 2</h3>
+                            <h5>card</h5>
+                            <div class="icon">
+                                <i class="fa fa-plus mr-3"></i><i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="collapse show" id="colW" data-parent="#accordion">
+        
+                        <div class="card">
+                            <img src="home-bg-slideshow3.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Web 2</h3>
+                            <h5>Web</h5>
+                            <div class="icon">
+                                <i class="fa fa-plus mr-3"></i><i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="collapse show" id="colA" data-parent="#accordion">
+                        <div class="card">
+                            <img src="gallery-img-05 - Copy.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>App 3</h3>
+                            <h5>App</h5>
+                            <div class="icon">
+                                <i class="fa fa-plus mr-3"></i><i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="collapse show" id="colC" data-parent="#accordion">
+                        <div class="card">
+                            <img src="gallery-img-06 - Copy.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Card 1</h3>
+                            <h5>card</h5>
+                            <div class="icon">
+                                <i class="fa fa-plus mr-3"></i><i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="collapse show" id="colC" data-parent="#accordion">
+                        <div class="card">
+                            <img src="gallery-img4.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Card 3</h3>
+                            <h5>card</h5>
+                            <div class="icon">
+                                <i class="fa fa-plus mr-3"></i><i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="collapse show" id="colW" data-parent="#accordion">
+        
+                        <div class="card">
+                            <img src="gallery-img6.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Web 3</h3>
+                            <h5>Web</h5>
+                            <div class="icon">
+                                <i class="fa fa-plus mr-3"></i><i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                        </div>
+        
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+          <!-- client part -->
+     <section class="client text-center">
+        <div class="container-fluid">
+        <div class="section-text">
+            <h4 class="p-3">Clients</h4>
+            <p class="lead">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam <br> cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <div class="carousel slide carousel-swiper p-5" data-ride="carousel" id="dem">
+          <ul class="carousel-indicators">
+              <li data-target="#dem" data-slide-to="0" class="active"></li>
+              <li data-target="#dem" data-slide-to="1"></li>
+              <li data-target="#dem" data-slide-to="2"></li>
+              <li data-target="#dem" data-slide-to="3"></li>
+              <li data-target="#dem" data-slide-to="4"></li>
+              <li data-target="#dem" data-slide-to="5"></li>
+              <li data-target="#dem" data-slide-to="6"></li>
+              <li data-target="#dem" data-slide-to="7"></li>
+          </ul>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="cook_breakfast.png" alt="" style="width: 100px;height: 100px;">
+              </div>
+              <div class="carousel-item">
+                  <img src="cook_dessert.png" alt="" style="width: 100px;height: 100px;">
+              </div>
+              <div class="carousel-item">
+                  <img src="cook_dinner.png" alt="" style="width: 100px;height: 100px;">
+              </div>
+              <div class="carousel-item">
+                  <img src="cook_lunch.png" alt="" style="width: 100px;height: 100px;">
+              </div>
+              <div class="carousel-item">
+                  <img src="cook_breakfast.png" alt="" style="width: 100px;height: 100px;">
+              </div>
+              <div class="carousel-item">
+                  <img src="cook_dinner.png" alt="" style="width: 100px;height: 100px;">
+              </div>
+              <div class="carousel-item">
+                  <img src="cook_breakfast.png" alt="" style="width: 100px;height: 100px;">
+              </div>
+              <div class="carousel-item">
+                  <img src="cook_dessert.png" alt="" style="width: 100px;height: 100px;">
+              </div>
+          </div>
+          <a href="#dem" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#dem" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+  </div>
+  </section>
+   <!-- footer part of project -->
+ <footer id="footer">
+    <div class="container-fluid bg-dark text-white" >
+      <div class="row p-5" >
+       <div class="col-lg-6">
+         <h4>Our Newsletter</h4>
+         <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+     </div>
+     <div class="col-lg-6">
+       <form action="">
+           <div class="input-group">
+               <input type="email" class="form-control" style="border-radius: 20px;">
+               <div class="input-group-append">
+                   <input type="submit"  style="border-radius: 20px; background-color: red; color: white;" >
+               </div>
+           </div>
+       </form>
+   </div>
+      </div>
+    </div>
+    <!-- our last part -->
+    <div class="footer-top">
+     <div class="container-fluid bg-dark text-white">
+         <div class="row p-5">
+             <div class="col-md-3">
+                 <h4>USEFUL LINKS</h4>
+                 <ul class="nav flex-column">
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Home</a></li>
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">About us</a></li>
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Services</a></li>
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Terms of service</a></li>
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Privacy policy</a></li>
+                 </ul>
+             </div>
+             <div class="col-md-3">
+               <h4>OUR SERVICES</h4>
+               <ul class="nav flex-column">
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Web Design</a></li>
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Web Development</a></li>
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Product Managment</a></li>
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Marketing</a></li>
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Graphic Design</a></li>
+               </ul>
+           </div>
+           <div class="col-md-3">
+               <h4>Contact Us</h4>
+               <p>
+                A108 Adam Street <br>
+                New York, NY 535022<br>
+                United States <br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+                </p>
+           </div>
+           <div class="col-md-3">
+               <h3>About Eterna</h3>
+               <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+               <div class="social-links mt-3">
+                 <a href="#" class="twitter text-white m-2"><i class="fab fa-twitter"></i></a>
+                 <a href="#" class="facebook text-white m-2"><i class="fab fa-facebook"></i></a>
+                 <a href="#" class="instagram text-white m-2"><i class="fab fa-instagram"></i></a>
+                 <a href="#" class="google-plus text-white m-2"><i class="fab fa-skype"></i></a>
+                 <a href="#" class="linkedin text-white m-2"><i class="fab fa-linkedin"></i></a>
+               </div>
+           </div>
+       </div>
+   </div>   
+</div>
+<div class="container-fluid bg-dark text-center text-white">
+   <p>© Copyright Eterna. All Rights Reserved</p>
+   <p>Designed by <code style="color: red;">Zabiada Arman</code> </p>
+</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="jquery/3.4.1/jquery.min.js"></script>
+    <script src="libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
+    <style>
+      .navbar1 .navbar-nav  .nav-link:hover{
+          color: red;
+      }
+      .navbar1 .navbar-nav  .dropdown-item:hover{
+          color: red;
+      }
+      .navbar1 .navbar-nav #active{
+          color: red;
+      }
+      .navbar-brand{
+          border: none;
+          border-left: 4px solid black;
+          padding: 3px;
+      }
+      .jumbotron .active{
+          color: red;
+      }
+      .image img{
+          width: 100%;
+          margin-bottom: 5%;
+      }
+      .card-link{
+          color: black;
+      }
+      .card-link:hover{
+          color: red;
+      }
+      .iconpart i{
+          margin-right:20px;
+      }
+      blockquote{
+          border: none;
+          font-weight: bolder;
+          border-left: 2px solid black;
+      }
+      .input-group-text {
+          background-color: red;
+          color: white;
+      }
+      .nav-item img{
+          width: 80px;
+      }
+      .tag1 a.btn:hover{
+          background-color: rgb(201, 37, 8);
+      }
+      .tag2 a.btn:hover{
+          background-color: rgb(228, 13, 5);
+      }
+      .tag3 a.btn:hover{
+          background-color: rgb(235, 4, 4);
+      }
+      .tag4 a.btn:hover{
+          background-color: rgb(224, 24, 24);
+      }
+      </style>
+</head>
+<body>
+    <section id="top"   >
+        <div class=" d-flex bg-dark text-light justify-content-between ">
+            <div class="p-2 ml-4">
+                <i class="fa fa-envelope p-1" style="color: red;"></i><a href="contact@example.com" class="text-white">contact@example.com</a>
+                <i class="fa fa-mobile-alt  p-1 ml-5"  style="color: red;"></i><span class="text-white">+1 5589 55488 55</span>
+            </div>
+              <div class="p-2 text-white d-flex">
+             <i class="fab fa-twitter p-2"></i>
+             <i class="fab fa-facebook p-2"></i>
+             <i class="fab fa-instagram p-2"></i>
+             <i class="fab fa-linkedin p-2"></i>
+             </div>
+        </div>
+    </section>
+     <!-- ....Navbar..... -->
+     <section class="navbar1  justify-content-center align-items-center sticky-top ">
+         <nav class="navbar navbar-expand-sm navbar-light shadow-lg bg-light">
+           <!-- <h2> <a href="" class="navbar-brand mr-5">ETERNA</a></h2> -->
+           <a class="navbar-brand ml-5" href="#"> <img src="logo 131.png" style="height: 50px ; width: 100%;"> </a> 
+             <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse " id="navcol">
+             <ul class="navbar-nav align-items-center ml-auto">
+                 <li class="nav-item p-2"><a href="index.html" class="nav-link" id="active">Home</a></li>
+                 <li class="nav-item p-2"><a href="about.html" class="nav-link">About</a></li>
+                 <li class="nav-item p-2"><a href="services.html" class="nav-link">Services</a></li>
+                 <li class="nav-item p-2"><a href="portfolio.html" class="nav-link">Portfilo</a></li>
+                 <li class="nav-item p-2"><a href="team.html" class="nav-link">team</a></li>
+                 <li class="nav-item p-2"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                 <li class="nav-item p-2"><a href="blog.html" class="nav-link">Blog</a></li>
+                 <li class="nav-item p-2 dropdown"><a href="#" class="nav-link dropdown-toggle" id="drop" data-toggle="dropdown">Drop Down</a>
+                 <div class="dropdown-menu">
+                     <a href="" class="dropdown-item">Drop Down 1</a>
+                     <a href="" class="dropdown-item dropdown-toggle " data-toggle="dropdown" id="drop2">Deep Drop Down</a>
+                     <div class="dropdown-menu">
+                         <a href="" class="dropdown-item">Deep Drop Down 1</a>
+                         <a href="" class="dropdown-item">Deep Drop Down 2</a>
+                         <a href="" class="dropdown-item">Deep Drop Down 3</a>
+                         <a href="" class="dropdown-item">Deep Drop Down 4</a>
+                         <a href="" class="dropdown-item">Deep Drop Down 5</a>
+                     </div>
+                     <a href="" class="dropdown-item">Drop Down 2</a>
+                     <a href="" class="dropdown-item">Drop Down 3</a>
+                     <a href="" class="dropdown-item">Drop Down 4</a>
+                 </div>
+                 </li>
+                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+             </ul>
+         </div>
+         </nav>
+     </section>
+      <!-- two part of navbar -->
+      <div class="jumbotron p-4">
+          <span class="ml-5"><a href="index.html" class="active" style="color: red;">Home</a>/</span><span>blog</span>
+          <h2 class="ml-5">Blog</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+            <!-- 8 column -->
+            <div class="col-lg-8 shadow-lg">
+                <div class="image">
+                    <img src="home-bg-slideshow3.jpg" alt="">
+                </div>
+                <h3><a href="" class="card-link">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur ipsa</a></h3>
+                 <div class="iconpart m-3">
+                     <i class="far fa-user"></i><span class="mr-3">john Deo</span>
+                     <i class="far fa-clock"></i><span class="mr-3">Jan 1,2022</span>
+                     <i class="far fa-comment"></i><span class="mr-3">12 comments</span>
+                 </div>
+                 <div class="content">
+                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio facilis deleniti expedita aperiam quas asperiores assumenda alias ipsum iusto atque quibusdam animi minima exercitationem, nostrum, vero iure veritatis esse?</p>
+                     <blockquote class="p-5 bg-light text-center">
+                        Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
+                     </blockquote>
+                     <p>Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.</p>
+                 </div>
+                     <h4>Et quae iure vel ut odit alias.</h4>
+                     <p>Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui. Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea. Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
+
+                    </p>
+                 <div class="image">
+                    <img src="home-bg-slideshow2.jpg" alt="">
+                </div>
+                <h4>Ut repellat blanditiis est dolore sunt dolorum quae.</h4>
+               
+                 <div class="content">
+                     <p class="lead">Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel. Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.</p>
+                     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maxime. Accusamus sequi sint culpa ipsam totam eius perspiciatis maxime velit nam praesentium quasi, numquam quidem minima quis nisi mollitia eveniet.</p><hr>
+                 </div>
+                 <div class="iconpart">
+                     <i class="fa fa-folder"></i><span class="mr-3"></i>Bussines</span>
+                     <i class="fa fa-tags"></i><span>creative ,Tips , Marketing</span>
+                     <i></i>
+                 </div>
+                 <div class="media mt-5 shadow-lg p-3 ">
+                     <img src="comments-4.jpg" alt="" class="mr-3 mt-3 rounded-circle" style="width: 150px;">
+                     <div class="media-body">
+                         <h4 class="m-3">John Smith</h4>
+                         <div class="ic px-4 py-2 text-secondary">
+                             <i class="fab fa-twitter"></i>
+                             <i class="fab fa-facebook"></i>
+                             <i class="fab fa-instagram"></i>
+                         </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus, ratione doloribus, laborum pariatur est recusandae vel, mollitia odio ut natus! Minima asperiores officiis odio voluptatem quis ratione atque aut?</p>
+                     </div>
+                 </div>
+                 <h4 class="mt-4 mx-5">8 Comments</h4>
+                 <div class="media mt-5  p-3 ">
+                    <img src="profile-1.jpg" alt="" class="mr-2 mt-2 " style="width: 100px;">
+                    <div class="media-body">
+                        <h4 class="m-2">John Smith</h4>
+                        <div class="ic text-secondary">
+                            <span>01 Jan, 2020</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus, ratione doloribus, laborum pariatur est recusandae vel, mollitia odio ut natus! Minima asperiores officiis odio voluptatem quis ratione atque aut?</p>
+                    </div>
+                </div>
+                 <div class="media mt-5  p-3 ">
+                    <img src="comments-1.jpg" alt="" class="mr-2 mt-2" style="width: 100px;">
+                    <div class="media-body">
+                        <h4 class="m-2">John Smith</h4>
+                        <div class="ic text-secondary">
+                            <span>01 Jan, 2020</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus, ratione doloribus, laborum pariatur est recusandae vel, mollitia odio ut natus! Minima asperiores officiis odio voluptatem quis ratione atque aut?</p>
+                        <div class="media p-4 ">
+                            <img src="comments-4.jpg" alt="" class="mr-2 mt-2 " style="width: 100px;">
+                            <div class="media-body">
+                                <h4 class="m-2">John Smith</h4>
+                                <div class="ic text-secondary">
+                                    <span>01 Jan, 2020</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus, ratione doloribus, laborum pariatur est recusandae vel, mollitia odio ut natus! Minima asperiores officiis odio voluptatem quis ratione atque aut?</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media p-4 ">
+                    <img src="profile-7.jpg" alt="" class="mr-2 mt-2 " style="width: 100px;">
+                    <div class="media-body">
+                        <h4 class="m-2">John Smith</h4>
+                        <div class="ic text-secondary">
+                            <span>01 Jan, 2020</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus, ratione doloribus, laborum pariatur est recusandae vel, mollitia odio ut natus! Minima asperiores officiis odio voluptatem quis ratione atque aut?</p>
+                    </div>
+                </div>
+                <div class="media p-4 ">
+                    <img src="comments-3.jpg" alt="" class="mr-2 mt-2 " style="width: 100px;">
+                    <div class="media-body">
+                        <h4 class="m-2">John Smith</h4>
+                        <div class="ic text-secondary">
+                            <span>01 Jan, 2020</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus, ratione doloribus, laborum pariatur est recusandae vel, mollitia odio ut natus! Minima asperiores officiis odio voluptatem quis ratione atque aut?</p>
+                    </div>
+                </div>
+                <form action="" class="shadow-lg p-4">
+                    <h5>Leave a Reply</h5>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <div class="row mb-4">
+                    <div class="col-sm-6"><input type="text" class="form-control" placeholder="Your Name*"></div>
+                    <div class="col-sm-6"><input type="email" class="form-control" placeholder="Your Email*"></div>
+                    </div>
+                    <input type="text" class="form-control mb-4" placeholder="Your Website">
+                    <input type="text" class="form-control mb-4" placeholder="Your Comment">
+                    <button class="btn btn-dark">Post Comment</button>
+                </form>
+            </div>
+            <!-- 8 column end-->
+
+            <div class="col-lg-4 shadow-lg" style="height: 100%;">
+                <h3>Search</h3>
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-search" ></i></span>
+                        </div>
+                    </div>
+                </form>
+                <h4 class="mx-4 my-3">Categories</h4>
+                <ul class="nav flex-column px-4">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">General <small class="text-secondary ml-2">(25)</small></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Lifestyle <small class="text-secondary ml-2">(2)</small></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Travel <small class="text-secondary ml-2">(15)</small></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Design <small class="text-secondary ml-2">(54)</small></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Creative <small class="text-secondary ml-2">(34)</small></a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Education <small class="text-secondary ml-2">(14)</small></a></li>
+                </ul>
+                <h4 class="mx-4 my-3">Recent Posts</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item p-2 font-weight-bold">
+                        <img src="comments-1.jpg" alt="">
+                          <a href="#" class="ml-3 text-dark">Aliquam et laboriosam eius</a>
+                    </li>
+                    <li class="nav-item p-2 font-weight-bold">
+                        <img src="comments-3.jpg" alt="">
+                          <a href="#" class="ml-3 text-dark">Aliquam et laboriosam eius</a>
+                    </li>
+                    <li class="nav-item p-2 font-weight-bold">
+                        <img src="profile-1.jpg" alt="">
+                          <a href="#" class="ml-3 text-dark">Aliquam et laboriosam eius</a>
+                    </li>
+                    <li class="nav-item p-2 font-weight-bold">
+                        <img src="comments-4.jpg" alt="">
+                          <a href="#" class="ml-3 text-dark">Aliquam et laboriosam eius</a>
+                    </li>
+                    <li class="nav-item p-2 font-weight-bold">
+                        <img src="profile-7.jpg" alt="">
+                          <a href="#" class="ml-3 text-dark">Aliquam et laboriosam eius</a>
+                    </li>
+                </ul>
+                <h4  class="mx-4 my-3">Tags</h4>
+                <div class="tag1 px-3">
+                <a href="" class="btn text-secondary">App</a>
+                <a href="" class="btn text-secondary">IT</a>
+                <a href="" class="btn text-secondary">Bussines</a>
+                </div>
+                <div class="tag2 px-3">
+                <a href="" class="btn text-secondary">Mac</a>
+                <a href="" class="btn text-secondary">Design</a>
+                <a href="" class="btn text-secondary">Office</a>
+                </div>
+                <div class="tag3 px-3">
+                <a href="" class="btn text-secondary">Creative</a>
+                <a href="" class="btn text-secondary">Studio</a>
+                <a href="" class="btn text-secondary">Smart</a>
+                </div>
+                <div class="tag4 px-3">
+                <a href="" class="btn text-secondary">Tips</a>
+                <a href="" class="btn text-secondary">Marketing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- footer part of project -->
+ <footer id="footer">
+    <div class="container-fluid bg-dark text-white" >
+      <div class="row p-5" >
+       <div class="col-lg-6">
+         <h4>Our Newsletter</h4>
+         <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+     </div>
+     <div class="col-lg-6">
+       <form action="">
+           <div class="input-group">
+               <input type="email" class="form-control" style="border-radius: 20px;">
+               <div class="input-group-append">
+                   <input type="submit"  style="border-radius: 20px; background-color: red; color: white;" >
+               </div>
+           </div>
+       </form>
+   </div>
+      </div>
+    </div>
+    <!-- our last part -->
+    <div class="footer-top">
+     <div class="container-fluid bg-dark text-white">
+         <div class="row p-5">
+             <div class="col-md-3">
+                 <h4>USEFUL LINKS</h4>
+                 <ul class="nav flex-column">
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Home</a></li>
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">About us</a></li>
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Services</a></li>
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Terms of service</a></li>
+                     <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Privacy policy</a></li>
+                 </ul>
+             </div>
+             <div class="col-md-3">
+               <h4>OUR SERVICES</h4>
+               <ul class="nav flex-column">
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Web Design</a></li>
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Web Development</a></li>
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Product Managment</a></li>
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Marketing</a></li>
+                   <li class="nav-item"><i class="fa fa-chevron-right p-1"></i><a href="#" class="text-white">Graphic Design</a></li>
+               </ul>
+           </div>
+           <div class="col-md-3">
+               <h4>Contact Us</h4>
+               <p>
+                A108 Adam Street <br>
+                New York, NY 535022<br>
+                United States <br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+                </p>
+           </div>
+           <div class="col-md-3">
+               <h3>About Eterna</h3>
+               <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+               <div class="social-links mt-3">
+                 <a href="#" class="twitter text-white m-2"><i class="fab fa-twitter"></i></a>
+                 <a href="#" class="facebook text-white m-2"><i class="fab fa-facebook"></i></a>
+                 <a href="#" class="instagram text-white m-2"><i class="fab fa-instagram"></i></a>
+                 <a href="#" class="google-plus text-white m-2"><i class="fab fa-skype"></i></a>
+                 <a href="#" class="linkedin text-white m-2"><i class="fab fa-linkedin"></i></a>
+               </div>
+           </div>
+       </div>
+   </div>   
+</div>
+<div class="container-fluid bg-dark text-center text-white">
+   <p>© Copyright Eterna. All Rights Reserved</p>
+   <p>Designed by <code style="color: red;">Zabiada Arman</code> </p>
+</div>
+  </footer>
+    
+</body>
+</html>
